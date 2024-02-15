@@ -2,7 +2,7 @@ import styled from "styled-components"
 import imgHeaderDesktop from "../assets/img-header-desktop3.jpeg"
 import { Button } from "./Layouts/Button"
 
-export function Header(){
+export function HeroArea(){
   return(
     <>
       <Container>
