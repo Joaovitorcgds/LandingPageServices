@@ -13,7 +13,7 @@ const Container = styled.div`
   flex-direction: column;
   align-items: center;
   text-align: center;
-  padding: 75px 30px 15px 30px;
+  padding: 35px 30px 15px 30px;
   overflow: hidden;
   background-color: #f0f0f3;
   border-radius: 10px;
@@ -25,5 +25,16 @@ const Container = styled.div`
   &:hover{
     background-color: #dc2751;
     color: white;
+  }
+
+  path {
+    fill: #1b1b1b; 
+    stroke: none;
+    transition: fill 0.7s;
+  }
+  &:hover{
+    path {
+      fill: white;
+    }
   }
 `
