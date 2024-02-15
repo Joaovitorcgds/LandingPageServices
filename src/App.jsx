@@ -1,15 +1,14 @@
+import { HeroArea } from "./components/HeroArea"
 import { Header } from "./components/Header"
-import { Navigation } from "./components/Navigation"
-import { About } from "./components/About"
+import { Services } from "./components/Services"
 import { Projects } from "./components/Projects"
 
 function App() {
-
   return (
     <>
-      <Navigation/>
       <Header/>
-      <About/>
+      <HeroArea/>
+      <Services/>
       <Projects/>
     </>
   )
