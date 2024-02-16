@@ -1,5 +1,7 @@
 import styled from "styled-components";
-import imgProject1 from "../assets/home-3.jpg";
+import { ProjectsUtil } from "./util/ProjectsUtil";
+// import imgProject1 from "../assets/imgProject.jpg";
+// import imgProject2 from "../assets/imgProject2.jpg";
 
 export function Projects() {
   return (
@@ -10,10 +12,19 @@ export function Projects() {
         <Line />
       </TitleAbout>
 
-      <ImgsProjectsContainer>
-        <ImgsProjects src={imgProject1} alt="sadsda"/>
-        <TextCardProjects>hello world</TextCardProjects>
-      </ImgsProjectsContainer>
+      <div style={{"display": "flex", "flexWrap": "wrap", "gap": "40px", "padding": "0px 20px", "justifyContent": "center"}}>
+        {ProjectsUtil.map((item) => {
+          return(
+            <CardsProjects key={item.title}>
+              <ImgsProjects src={item.img} alt="sadsda"/>
+              <TextCardProjects>{item.title}
+                <br></br>
+                <TextAuxFirstSection>{item.subtitle}</TextAuxFirstSection>
+              </TextCardProjects>
+            </CardsProjects>
+          )
+        })}
+      </div>
     </Container>
   );
 }
@@ -51,20 +62,20 @@ const Line = styled.div`
   opacity: 1;
   margin-top: 15px;
 `;
-const ImgsProjectsContainer = styled.div`
-  position: relative;
+const CardsProjects = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
   width: 346px;
   height: 430px;
-  overflow: hidden;
   cursor: pointer;
-  z-index:3;
+  transition: all .7s;
 
   &:hover{
+    transform: scale(.95);
+
     img{
-      filter: grayscale(0) opacity(100%) brightness(.5);
+      filter: grayscale(0) opacity(100%) brightness(.6);
     }
 
     h1{
@@ -72,18 +83,19 @@ const ImgsProjectsContainer = styled.div`
     }
   }
 `;
-
 const ImgsProjects = styled.img`
   display: flex;
   justify-content: center;
   align-items: center;
+  border-radius: 10px;
   width: 100%;
   height: 100%;
   filter: grayscale(1) opacity(75%);
   transition: all 0.4s;
 `;
-
 const TextCardProjects = styled.h1`
+  text-align: center;
+  line-height: 25px;
   position: absolute;
   opacity: 0;
   color: white;
