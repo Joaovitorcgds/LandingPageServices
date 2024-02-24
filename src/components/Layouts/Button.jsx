@@ -1,16 +1,18 @@
 import styled from "styled-components"
 
-export function Button({children, bgcolor, margin, ftsize}){
+export function Button({children, bgcolor, margin, ftsize, toggleMenu}){
   return(
     <AllButton 
     $primary={bgcolor}  
     $margin={margin}
     $ftsize={ftsize}
+    onClick={toggleMenu}
     > 
       {children}
     </AllButton>
   )
 }
+
 
 const AllButton = styled.button`
   margin: ${props => props.$margin || 0};

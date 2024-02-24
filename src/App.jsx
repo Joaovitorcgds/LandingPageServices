@@ -1,7 +1,7 @@
-import { HeroArea } from "./components/HeroArea"
+import { HeroArea } from "./components/HeroArea/"
 import { Header } from "./components/Header"
-import { Services } from "./components/Services"
-import { Projects } from "./components/Projects"
+import { Services } from "./components/ServicesSection"
+import { Projects } from "./components/ProjectsSection"
 
 function App() {
   return (
