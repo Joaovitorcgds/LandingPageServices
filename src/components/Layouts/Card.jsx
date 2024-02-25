@@ -7,13 +7,13 @@ export function Card({children}){
 }
 
 const Container = styled.div`
-  width: 296px;
+  width: 286px;
   height: 410px;
   display: flex;
   flex-direction: column;
   align-items: center;
   text-align: center;
-  padding: 35px 30px 15px 30px;
+  padding: 35px 20px 15px 20px;
   overflow: hidden;
   background-color: #f0f0f3;
   border-radius: 10px;
@@ -21,7 +21,7 @@ const Container = styled.div`
   transition: 0.7s;
   color: #1b1b1b;
 
-
+  
   &:hover{
     background-color: #dc2751;
     color: white;
@@ -37,4 +37,5 @@ const Container = styled.div`
       fill: white;
     }
   }
+
 `

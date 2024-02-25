@@ -16,7 +16,7 @@ export function Services(){
         <div className="containerCardServices">
           {servicesUtil.map((item) => {
             return(
-              <Card key={item.title}>
+              <Card key={item.title} className="cardServices">
                 {item.path(ImgSVG)}
                 <h1 className="titleCard">{item.title}</h1>
                 <span className="subtitleCard">{item.subTitle}</span>
@@ -31,6 +31,6 @@ export function Services(){
 
 const ImgSVG = styled.svg`
   width: 90px;
-  height: 100px;
+  height: auto;
   margin-bottom: 16px;
 `

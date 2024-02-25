@@ -1,18 +1,17 @@
-import { useState, useEffect } from "react"
-import { Button } from "../Layouts/Button"
-import { List } from "@phosphor-icons/react";
+import { useState } from "react"
+import { List, X } from "@phosphor-icons/react";
 import { HeaderContainer } from "./styles";
 
 export function Header(){
-  const [isMobile, setIsMobile] = useState(false);
+  const navItens = [
+    "Home",
+    "Serviços",
+    "Projetos",
+    "Dúvidas",
+    "Contato"
+  ]
   const [isOpen, setIsOpen] = useState(false);
-
-  useEffect(() => {
-    if(window.innerWidth < "950"){
-      setIsMobile(true)
-    }
-    else(setIsMobile(false))
-  },[]);
+  const [navbar, setNavbar] = useState(false);
 
   function toggleMenu(){
     if(isOpen){
@@ -23,38 +22,48 @@ export function Header(){
     }
   }
 
-  const navItens = [
-    "Home",
-    "Serviços",
-    "Projetos",
-    "Dúvidas",
-    "Contato"
-  ]
+  function stickyNavbar(){
+    if(window.scrollY >= 80){
+      setNavbar(true)
+    } else {
+      setNavbar(false)
+    }
+  }
+
+  window.addEventListener("scroll", (stickyNavbar))
 
   return(
     <>
-      <HeaderContainer>
+      <HeaderContainer className={navbar ? "sticky" : ""}>
         <h1>Desenvolvedor</h1>
-        
-        {isMobile?
-          <List className="btnMobile" onClick={toggleMenu} size={32} color="#ffff" weight="fill" />
-        : 
-          <></>
+
+        {isOpen ? 
+          <X size={32} onClick={toggleMenu} weight="bold" color={navbar ? "black" : "white"}/>
+        :
+          <List className="btnMobile" onClick={toggleMenu} size={32} color={navbar ? "black" : "white"} weight="bold"/>
         }
-  
-        <ul className={isOpen ? "actived" : ""}>
+
+        <ul className="navigation">
           {navItens.map((item) => {
             return(
-              <li key={item}>{item}</li>
+              <a href="#" key={item}>
+                <li>{item}</li>
+              </a>
+            )
+          })}
+        </ul>
+        
+        <ul className={` menuMobile ${isOpen ? "actived" : ""}`}>
+          {navItens.map((item) => {
+            return(
+              <a href="#" key={item}>
+                <li>{item}</li>
+              </a>
             )
           })}
         </ul>
 
-        {window.innerWidth < "950" ? 
-          <></>
-        : 
-        <Button className="btnHeader" bgcolor="transparent">Solicitar Orçamento</Button>
-        }
+        <button className="btnHeader">Solicitar Orçamento</button>
       </HeaderContainer>
     </>
   )

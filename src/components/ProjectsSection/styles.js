@@ -33,6 +33,11 @@ import styled from "styled-components";
       font-weight: 800;
       line-height: 80px;
       color: #1b1b1b;
+
+      @media (max-width: 450px){
+        font-size: 36px;
+        line-height: 50px;
+      }
     }
 
     > .line{

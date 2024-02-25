@@ -29,7 +29,7 @@ export const ContainerServices = styled.section`
       color: #1b1b1b;
 
       @media (max-width: 450px){
-        font-size: 40px;
+        font-size: 36px;
         line-height: 80px;
       }
     }
@@ -46,7 +46,7 @@ export const ContainerServices = styled.section`
     display: flex;
     flex-wrap: wrap;
     gap: 40px;
-    padding: 0px 20px;
+    padding: 0px 10px;
     justify-content: center;
 
     .titleCard{
