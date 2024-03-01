@@ -1,16 +1,17 @@
+import { HeroArea } from "./components/HeroArea/"
 import { Header } from "./components/Header"
-import { Navigation } from "./components/Navigation"
-import { About } from "./components/About"
-import { Projects } from "./components/Projects"
+import { Services } from "./components/ServicesSection"
+import { Projects } from "./components/ProjectsSection"
+import { Doubts } from "./components/Doubts"
 
 function App() {
-
   return (
     <>
-      <Navigation/>
       <Header/>
-      <About/>
+      <HeroArea/>
+      <Services/>
       <Projects/>
+      <Doubts/>
     </>
   )
 }
