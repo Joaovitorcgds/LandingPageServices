@@ -1,12 +1,11 @@
 import { ContainerProjects } from "./styles.js";
 import { ProjectsUtil } from "../../util/ProjectsUtil.js";
-import 'animate.css';
 
 
 export function Projects() {
   return (
     <ContainerProjects>
-      <div className="animate__animated animate__fadeInUp textContainer">
+      <div className="textContainer">
         <span>Projetos & Portfólio</span>
         <h1>Trabalhos Realizados</h1>
         <div className="line"></div>

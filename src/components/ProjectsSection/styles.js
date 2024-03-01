@@ -8,10 +8,6 @@ import styled from "styled-components";
   align-items: center;
   padding-bottom: 50px;
 
-  .animate__animated.animate__fadeInUp {
-    --animate-duration: .5s;
-  }
-
   > .textContainer{
     display: flex;
     flex-direction: column;
