@@ -60,7 +60,7 @@ export const ContainerDoubts = styled.div`
       height: auto;
       display: block;
       transition: all ease-in-out .5s;
-      word-wrap: break-word;
+      word-wrap: break-word;  
     }
   }
 `
