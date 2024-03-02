@@ -55,11 +55,12 @@ export const ContainerDoubts = styled.div`
       transition: all ease-in-out .5s;
       /* visibility: hidden; */
     }
-
+    
     div .expanded{
       height: auto;
       display: block;
       transition: all ease-in-out .5s;
+      word-wrap: break-word;
     }
   }
 `

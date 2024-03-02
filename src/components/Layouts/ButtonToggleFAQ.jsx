@@ -2,7 +2,7 @@ import styled from "styled-components"
 
 export function ButtonToggleFAQ({children, onclick, className}){
   return(
-    <BtnFAQ onClick={() => onclick} className={className}>
+    <BtnFAQ onClick={onclick} className={className}>
       {children}
     </BtnFAQ>
   )
