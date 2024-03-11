@@ -3,6 +3,7 @@ import { Header } from "./components/Header"
 import { Services } from "./components/ServicesSection"
 import { Projects } from "./components/ProjectsSection"
 import { Doubts } from "./components/Doubts"
+import { Footer } from "./components/Footer"
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
       <Services/>
       <Projects/>
       <Doubts/>
+      <Footer/>
     </>
   )
 }

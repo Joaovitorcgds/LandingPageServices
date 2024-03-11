@@ -20,10 +20,22 @@ export function Doubts(){
   }
 
   const doubtsList = [
-    {question: "O que é Landing Page?",
-    answer: "é uma página da web projetada especificamente para receber o tráfego direcionado de uma campanha de marketing, anúncio ou link. O objetivo principal de uma landing page é converter os visitantes em leads ou clientes"},
-    {question: "jajajajaj",
-     answer: "fjdofjdspofjpsodjpfodsjfposjdpfojsdpofjdsopjfposdjfposdjfpojsdof"}
+    {
+      question: "O que é Landing Page?",
+      answer: "É uma página da web projetada especificamente para receber o tráfego direcionado de uma campanha de marketing, anúncio ou link. O objetivo principal de uma landing page é converter os visitantes em leads ou clientes"
+    },
+    {
+      question: "Quanto tempo leva para criar um site ou landing page?",
+      answer: "O período de criação varia entre 1 ou 2 semanas dependendo das funcionalidades e número de páginas que serão pedidas."
+    },
+    {
+      question: "Como funciona o processo de design e desenvolvimento?",
+      answer: "O cliente passa algumas especificações como estilo de design, cores, fontes e as funcionalidades que ele deseja e depois passa por um conjuto de análises para chegar a uma precificação e logo após cpmeçar o processo de desenvolvimento."
+    },
+    {
+      question: "Posso fazer atualizações no site ou landing page por conta própria?",
+      answer: "Sim, disponibilizamos o login de acesso no serviço de hospedagem mais o arquivo compactado do site"
+    }
   ]
   
   return(
