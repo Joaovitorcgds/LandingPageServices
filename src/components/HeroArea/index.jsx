@@ -1,5 +1,5 @@
 import { Button } from "../Layouts/Button"
-import { HeroAreaContainer } from "./styles"
+import { HeroAreaContainer } from "./style"
 
 export function HeroArea(){
   return(

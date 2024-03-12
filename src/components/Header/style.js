@@ -23,7 +23,7 @@ export const HeaderContainer = styled.header`
     background-color: white;
     color: black;
 
-    ul a{
+    nav a{
       color: black;
       transition: all .4s;
       

@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { ContainerServices } from "./styles.js";
+import { ContainerServices } from "./style.js";
 import { Card } from "../Layouts/Card.jsx";
 import { servicesUtil } from "../../util/ServicesUtil.jsx";
 

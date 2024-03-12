@@ -1,6 +1,6 @@
 import { useState } from "react"
 import { List, X } from "@phosphor-icons/react";
-import { HeaderContainer } from "./styles";
+import { HeaderContainer } from "./style";
 
 export function Header(){
   const navItens = [
@@ -43,25 +43,25 @@ export function Header(){
           <List className="btnMobile" onClick={toggleMenu} size={32} color={navbar ? "black" : "white"} weight="bold"/>
         }
 
-        <ul className="navigation">
+        <nav className="navigation">
           {navItens.map((item) => {
             return(
               <a href="#" key={item}>
-                <li>{item}</li>
+                {item}
               </a>
             )
           })}
-        </ul>
+        </nav>
         
-        <ul className={` menuMobile ${isOpen ? "actived" : ""}`}>
+        <nav className={` menuMobile ${isOpen ? "actived" : ""}`}>
           {navItens.map((item) => {
             return(
               <a href="#" key={item}>
-                <li>{item}</li>
+                {item}
               </a>
             )
           })}
-        </ul>
+        </nav>
 
         <button className="btnHeader">Solicitar Orçamento</button>
       </HeaderContainer>

@@ -1,4 +1,4 @@
-import { ContainerProjects } from "./styles.js";
+import { ContainerProjects } from "./style.js";
 import { ProjectsUtil } from "../../util/ProjectsUtil.js";
 
 

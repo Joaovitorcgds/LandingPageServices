@@ -1,5 +1,5 @@
 import styled from "styled-components"
-import imgHeaderDesktop from "../../assets/img-header-desktop3.jpeg"
+import imgHeaderDesktop from "../../assets/img-header-desktop2.jpeg"
 
 export const HeroAreaContainer = styled.section`
   background-image: url(${imgHeaderDesktop});

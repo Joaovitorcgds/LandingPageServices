@@ -1,13 +1,14 @@
 import styled from "styled-components";
 
 export const ContainerDoubts = styled.div`
+  padding-bottom: 45px;
 
   > .textContainer{
     display: flex;
     flex-direction: column;
     align-items: center;
     margin-bottom: 30px;
-    padding-top: 130px;
+    padding-top: 100px;
 
     > span{
       font-weight: 200;
