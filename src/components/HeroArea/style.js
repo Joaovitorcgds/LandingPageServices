@@ -66,5 +66,23 @@ export const HeroAreaContainer = styled.section`
       color: #fff;
       margin: 0px 25px;
     }
+
+    > .btnHeroArea{
+      text-decoration: none;
+      margin-top: 45px;
+      padding: 15px 30px;
+      color: white;
+      font-weight: 800;
+      font-size: clamp(.5rem, .7em + 1vw, 2em);
+      border: 2px solid #dc2751;
+      border-radius: 80px;
+      background-color:#dc2751;
+      transition: all .4s;
+
+      &:hover{
+        cursor: pointer;
+        background-color: #dc2751;
+      }
+    }
   }
 `

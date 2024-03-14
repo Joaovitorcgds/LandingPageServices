@@ -1,4 +1,3 @@
-import { Button } from "../Layouts/Button"
 import { HeroAreaContainer } from "./style"
 
 export function HeroArea(){
@@ -12,7 +11,7 @@ export function HeroArea(){
 
           <span>Tenha uma Landing Page com alta conversão para seus serviços no Google e Instagram.</span>
 
-          <Button margin="15px 0px 0px" ftsize={`clamp(.5rem, .7em + 1vw, 2em)`} bgcolor="#dc2751">Quero fazer minha Landing Page</Button>
+          <a href="https://api.whatsapp.com/send?phone=5521975875130&text=Quero%20dar%20o%20primeiro%20passo%20para%20construir%20a%20identidade%20digital%20da%20minha%20empresa." className="btnHeroArea">Quero fazer minha Landing Page</a>
         </div>
       </HeroAreaContainer>
     </>
