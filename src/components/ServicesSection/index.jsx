@@ -2,11 +2,30 @@ import styled from "styled-components";
 import { ContainerServices } from "./style.js";
 import { Card } from "../Layouts/Card.jsx";
 import { servicesUtil } from "../../util/ServicesUtil.jsx";
+import { useLayoutEffect } from "react";
+import gsap from "gsap";
+import { ScrollTrigger } from "gsap/all";
 
 export function Services(){
+
+  useLayoutEffect(() => {
+    
+    gsap.registerPlugin(ScrollTrigger);
+    gsap.to(".containerTextServices", {
+      opacity: 1,
+      width: "auto",
+      scrollTrigger: {
+        trigger: "#sectionServices",
+        start: "top 400px"
+      }
+    })
+
+    return () => { gsap.killTweensOf(".containerTextServices")}
+  },[])
+
   return(
     <>
-      <ContainerServices>
+      <ContainerServices id="sectionServices">
         <div className="containerTextServices">
           <span>O que fazemos</span>
           <h1>Nossos Serviços</h1>

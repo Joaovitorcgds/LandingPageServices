@@ -4,12 +4,28 @@ import { HeaderContainer } from "./style";
 
 export function Header(){
   const navItens = [
-    "Home",
-    "Serviços",
-    "Projetos",
-    "Dúvidas",
-    "Contato"
+    {
+      name: "Home",
+      navigate: "/" 
+    },
+    {
+      name: "Serviços",
+      navigate: "#sectionServices"
+    },
+    {
+      name: "Projetos",
+      navigate: "#sectionProjects"
+    },
+    {
+      name: "Dúvidas",
+      navigate: "#sectionDoubts"
+    },
+    {
+      name:"Contato",
+      navigate: "#sectionContact"
+    }
   ]
+
   const [isOpen, setIsOpen] = useState(false);
   const [navbar, setNavbar] = useState(false);
 
@@ -35,7 +51,7 @@ export function Header(){
   return(
     <>
       <HeaderContainer className={navbar ? "sticky" : ""}>
-        <h1>Desenvolvedor</h1>
+        <a href="/">João Developer</a>
 
         {isOpen ? 
           <X size={32} onClick={toggleMenu} weight="bold" color={navbar ? "black" : "white"}/>
@@ -46,8 +62,8 @@ export function Header(){
         <nav className="navigation">
           {navItens.map((item) => {
             return(
-              <a href="#" key={item}>
-                {item}
+              <a href={item.navigate} key={item.name}>
+                {item.name}
               </a>
             )
           })}
@@ -56,14 +72,15 @@ export function Header(){
         <nav className={` menuMobile ${isOpen ? "actived" : ""}`}>
           {navItens.map((item) => {
             return(
-              <a href="#" key={item}>
-                {item}
+              <a href={item.navigate} onClick={() => setIsOpen(false)} key={item.name}>
+                {item.name}
               </a>
             )
           })}
         </nav>
 
-        <button className="btnHeader">Solicitar Orçamento</button>
+        <a href="https://api.whatsapp.com/send?phone=5521975875130&text=Quero%20dar%20o%20primeiro%20passo%20para%20construir%20a%20identidade%20digital%20da%20minha%20empresa."
+        target="_blank" className="btnHeader">Solicitar Orçamento</a>
       </HeaderContainer>
     </>
   )

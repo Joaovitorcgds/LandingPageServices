@@ -23,6 +23,10 @@ export const HeaderContainer = styled.header`
     background-color: white;
     color: black;
 
+    a{
+      color: black;
+    }
+
     nav a{
       color: black;
       transition: all .4s;
@@ -41,7 +45,9 @@ export const HeaderContainer = styled.header`
     }
   }
   
-  > h1{
+  > a{
+    text-decoration: none;
+    color: white;
     font-weight: 700;
     font-size: 1.5rem;
     transition: color .2s;
@@ -136,6 +142,7 @@ export const HeaderContainer = styled.header`
 
     &:hover{
       cursor: pointer;
+      color: white;
       background-color: #dc2751;
     }
 

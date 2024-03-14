@@ -1,14 +1,22 @@
 import styled from "styled-components";
 
 export const ContainerDoubts = styled.div`
-  padding-bottom: 45px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 100px 20px;
 
   > .textContainer{
     display: flex;
     flex-direction: column;
     align-items: center;
     margin-bottom: 30px;
-    padding-top: 100px;
+    width: 0;
+    white-space: nowrap;
+    overflow-x: hidden;
+    transition: all steps(30) 1s normal both;
+    opacity: 0;
 
     > span{
       font-weight: 200;
@@ -19,6 +27,7 @@ export const ContainerDoubts = styled.div`
     }
 
     > h1{
+      display: inline-block;
       text-align: center;
       font-size: 48px;
       font-weight: 800;
@@ -26,7 +35,7 @@ export const ContainerDoubts = styled.div`
       color: #1b1b1b;
 
       @media (max-width: 450px){
-        font-size: 36px;
+        font-size: 32px;
         line-height: 50px;
       }
     }
@@ -43,8 +52,7 @@ export const ContainerDoubts = styled.div`
     display: flex;
     flex-direction: column;
     gap: 10px;
-    padding: 20px;
-
+    width: 100%;
     
     div .questionFAQ{
       font-weight: 600;

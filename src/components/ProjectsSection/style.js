@@ -6,14 +6,18 @@ import styled from "styled-components";
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding-bottom: 50px;
+  padding: 100px 20px;
 
   > .textContainer{
     display: flex;
     flex-direction: column;
     align-items: center;
     margin-bottom: 30px;
-    padding-top: 130px;
+    width: 0;
+    white-space: nowrap;
+    overflow: hidden;
+    transition: all steps(30) 1s normal both;
+    opacity: 0;
 
     > span{
       font-weight: 200;
@@ -24,6 +28,7 @@ import styled from "styled-components";
     }
 
     > h1{
+      display: inline-block;
       text-align: center;
       font-size: 48px;
       font-weight: 800;
@@ -31,7 +36,7 @@ import styled from "styled-components";
       color: #1b1b1b;
 
       @media (max-width: 450px){
-        font-size: 36px;
+        font-size: 30px;
         line-height: 50px;
       }
     }
@@ -48,7 +53,6 @@ import styled from "styled-components";
     display: flex;
     flex-wrap: wrap;
     gap: 40px;
-    padding: 0px 20px;
     justify-content: center;
 
     .cardsProjects{

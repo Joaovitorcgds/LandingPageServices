@@ -1,9 +1,27 @@
 import { ContainerDoubts } from "./style";
 import { useState } from "react";
 import { ButtonToggleFAQ } from "../Layouts/ButtonToggleFAQ";
+import { useLayoutEffect } from "react";
+import gsap from "gsap";
+import { ScrollTrigger } from "gsap/all";
 
 export function Doubts(){
   const [expanded, setExpanded] = useState(false)
+
+  useLayoutEffect(() => {
+    
+    gsap.registerPlugin(ScrollTrigger);
+    gsap.to(".textContainer", {
+      opacity: 1,
+      width: "auto",
+      scrollTrigger: {
+        trigger: "#sectionDoubts",
+        start: "top 400px"
+      }
+    })
+
+    return () => { gsap.killTweensOf(".textContainer")}
+  },[])
 
   function toggleFAQ(i){
     setExpanded(!expanded)
@@ -39,8 +57,7 @@ export function Doubts(){
   ]
   
   return(
-    <ContainerDoubts>
-
+    <ContainerDoubts id="sectionDoubts">
       <div className="textContainer">
         <span>Perguntas frequentes</span>
         <h1>Principais dúvidas</h1>

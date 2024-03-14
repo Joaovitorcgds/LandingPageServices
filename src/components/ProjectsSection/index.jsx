@@ -1,10 +1,29 @@
 import { ContainerProjects } from "./style.js";
 import { ProjectsUtil } from "../../util/ProjectsUtil.js";
+import { useLayoutEffect } from "react";
+import gsap from "gsap";
+import { ScrollTrigger } from "gsap/all";
 
 
 export function Projects() {
+
+  useLayoutEffect(() => {
+    
+    gsap.registerPlugin(ScrollTrigger);
+    gsap.to(".textContainer", {
+      opacity: 1,
+      width: "auto",
+      scrollTrigger: {
+        trigger: "#sectionProjects",
+        start: "top 400px"
+      }
+    })
+
+    return () => { gsap.killTweensOf(".textContainer")}
+  },[])
+
   return (
-    <ContainerProjects>
+    <ContainerProjects id="sectionProjects">
       <div className="textContainer">
         <span>Projetos & Portfólio</span>
         <h1>Trabalhos Realizados</h1>

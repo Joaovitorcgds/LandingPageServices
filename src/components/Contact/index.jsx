@@ -1,10 +1,29 @@
-import { ContactContainer } from "./style"
-import { Button } from "../Layouts/Button"
+import { ContactContainer } from "./style";
+import { Button } from "../Layouts/Button";
+import { useLayoutEffect } from "react";
+import gsap from "gsap";
+import { ScrollTrigger } from "gsap/all";
 
 export function Contact(){
+
+  useLayoutEffect(() => {
+    
+    gsap.registerPlugin(ScrollTrigger);
+    gsap.to(".textContainer", {
+      opacity: 1,
+      width: "auto",
+      scrollTrigger: {
+        trigger: "#sectionContact",
+        start: "top 500px"
+      }
+    })
+
+    return () => { gsap.killTweensOf(".textContainer")}
+  },[])
+
   return(
     <>
-      <ContactContainer>
+      <ContactContainer id="sectionContact">
         <div className="textContainer">
           <span>Desenvolvemos seu futuro digital</span>
           <h1><span>Vamos</span> Começar?</h1>

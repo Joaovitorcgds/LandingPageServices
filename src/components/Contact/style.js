@@ -19,6 +19,11 @@ export const ContactContainer = styled.section`
     flex-direction: column;
     align-items: center;
     margin-bottom: 30px;
+    width: 0;
+    white-space: nowrap;
+    overflow-x: hidden;
+    transition: all steps(30) 1s normal both;
+    opacity: 0;
 
     > span{
       font-weight: 200;
@@ -30,6 +35,7 @@ export const ContactContainer = styled.section`
 
       @media (max-width: 450px){
         font-size: 20px;
+        line-height: 30px;
       }
     }
 
@@ -47,11 +53,16 @@ export const ContactContainer = styled.section`
         color: transparent;
         -webkit-text-stroke: 1px #fff;
         opacity: .8;
+
+        @media (max-width: 450px){
+          font-size: 32px;
+          line-height: 30px;
+        }
       }
 
       @media (max-width: 450px){
-        font-size: 55px;
-        line-height: 50px;
+        font-size: 32px;
+        line-height: 30px;
       }
     }
 
