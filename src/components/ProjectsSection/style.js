@@ -23,7 +23,7 @@ import styled from "styled-components";
       font-weight: 200;
       font-size: 22px;
       font-style: italic;
-      font-family: "Architects Daughter", cursive;
+      font-family: "Madimi One", sans-serif;
       color: #dc2751;
     }
 
@@ -104,7 +104,7 @@ import styled from "styled-components";
       .fontWeight{
         font-size: 22px;
         font-style: italic;
-        font-family: "Architects Daughter", cursive;
+        font-family: "Madimi One", sans-serif;
         color: rgb(220, 39, 81);
         font-weight: 600;
       }

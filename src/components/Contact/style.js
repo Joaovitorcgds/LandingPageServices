@@ -29,7 +29,7 @@ export const ContactContainer = styled.section`
       font-weight: 200;
       font-size: 22px;
       font-style: italic;
-      font-family: "Architects Daughter", cursive;
+      font-family: "Madimi One", sans-serif;
       color: #dc2751;
       margin-bottom: 15px;
 
