@@ -14,7 +14,7 @@ export const HeroAreaContainer = styled.section`
   left: 0;
   display: block;
 
-  @media (max-width: 950px){
+  @media (max-width: 650px){
     background-image: url(${heroareaMobile});
   }
 

@@ -4,7 +4,7 @@ export function HeroArea(){
   return(
     <>
       <HeroAreaContainer>
-        {/* <div>
+        <div>
           <h1>
             Soluções
             <span className="subtitleHeroArea">Criativas</span>
@@ -14,7 +14,7 @@ export function HeroArea(){
 
           <a href="https://api.whatsapp.com/send?phone=5521975875130&text=Quero%20dar%20o%20primeiro%20passo%20para%20construir%20a%20identidade%20digital%20da%20minha%20empresa." className="btnHeroArea">Desenvolva Seu Futuro Digital</a>
         </div> 
-        */}
+       
       </HeroAreaContainer>
     </>
   )
