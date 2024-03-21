@@ -2,9 +2,10 @@ import styled from "styled-components"
 import imgHeaderDesktop from "../../assets/img-header-desktop2.jpeg"
 
 export const HeroAreaContainer = styled.section`
-  background-image: url(${imgHeaderDesktop});
+  /* background-image: url(${imgHeaderDesktop});
   background-size: cover;
-  background-repeat: no-repeat;
+  background-repeat: no-repeat; */
+  background-color: black;
   width: 100%;
   height: 100vh;
   position: relative;
@@ -59,8 +60,9 @@ export const HeroAreaContainer = styled.section`
     }
 
     > span{
+      max-width: 700px;
       text-align: center;
-      font-size: 15px;
+      font-size: 18px;
       line-height: 25px;
       font-weight: 500; 
       color: #fff;
