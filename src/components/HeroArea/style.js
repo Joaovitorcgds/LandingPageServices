@@ -1,5 +1,5 @@
 import styled from "styled-components"
-import imgHeaderDesktop from "../../assets/img-header-desktop2.jpeg"
+import imgHeaderDesktop from "../../assets/img-header-desktop2.webp"
 import heroareaMobile from "../../assets/heroareaMobile.webp"
 
 export const HeroAreaContainer = styled.section`
