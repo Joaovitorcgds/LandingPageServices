@@ -71,16 +71,17 @@ export const HeroAreaContainer = styled.section`
 
 
     > p{
-      max-width: 400px;
+      max-width: 600px;
       text-align: center;
       font-size: 18px;
       line-height: 25px;
       font-weight: 500; 
       color: #fff;
-      /* margin: 0px 25px; */
+    
 
       @media (max-width: 475px){
         font-size: 14px;
+        max-width: 400px;
       }
     }
 
