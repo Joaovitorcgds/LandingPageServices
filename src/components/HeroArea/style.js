@@ -26,25 +26,27 @@ export const HeroAreaContainer = styled.section`
     height: 100vh;
 
   
-    > p{
-        margin-top: 45px;
-        font-size: 65px;
-        line-height: 4rem;
-        animation-delay: .4s;
-        color: transparent;
-        -webkit-text-stroke: 1px #fff;
-        opacity: .8;
+    > h1{
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+      margin-top: 45px;
+      font-size: 65px;
+      line-height: 4rem;
+      animation-delay: .4s;
+      color: transparent;
+      -webkit-text-stroke: 1px #fff;
+      opacity: .8;
 
-        @media (min-width: 950px) {
-          font-size: 105px;
-          line-height: 135px
-        }
-        @media (max-width: 475px){
-          font-size: 45px;
-        }
+      @media (min-width: 950px) {
+        font-size: 105px;
+        line-height: 135px
       }
-
-    > .subtitleHeroArea{
+      @media (max-width: 475px){
+        font-size: 45px;
+      }
+      
+      > .subtitleHeroArea{
       text-align: center;
       font-size: 80px;
       line-height: 100px;
@@ -63,8 +65,10 @@ export const HeroAreaContainer = styled.section`
         font-size: 50px;
       }
     }
+    }
 
-    > span{
+
+    > p{
       max-width: 700px;
       text-align: center;
       font-size: 18px;
