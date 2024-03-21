@@ -12,7 +12,10 @@ export const HeroAreaContainer = styled.section`
   position: relative;
   top: 0;
   left: 0;
-  display: block;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 
   @media (max-width: 650px){
     background-image: url(${heroareaMobile});
@@ -23,8 +26,7 @@ export const HeroAreaContainer = styled.section`
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: 100vh;
-
+    max-width: 80%;
   
     > h1{
       display: flex;
@@ -69,13 +71,17 @@ export const HeroAreaContainer = styled.section`
 
 
     > p{
-      max-width: 700px;
+      max-width: 400px;
       text-align: center;
       font-size: 18px;
       line-height: 25px;
       font-weight: 500; 
       color: #fff;
-      margin: 0px 25px;
+      /* margin: 0px 25px; */
+
+      @media (max-width: 475px){
+        font-size: 14px;
+      }
     }
 
     > .btnHeroArea{
@@ -93,6 +99,14 @@ export const HeroAreaContainer = styled.section`
       &:hover{
         cursor: pointer;
         background-color: #dc2751;
+      }
+
+      @media (max-width: 475px){
+        font-size: 14px;
+      }
+
+      @media (max-width: 340px){
+        font-size: 12px;
       }
     }
   }
