@@ -7,7 +7,7 @@ export const HeroAreaContainer = styled.section`
   background-size: cover;
   background-repeat: no-repeat;
   background-color: black;
-  width: 100%;
+  width: 100vw;
   height: 100vh;
   position: relative;
   top: 0;
@@ -26,7 +26,7 @@ export const HeroAreaContainer = styled.section`
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    max-width: 80%;
+    max-width: 90%;
   
     > h1{
       display: flex;
@@ -45,7 +45,7 @@ export const HeroAreaContainer = styled.section`
         line-height: 135px
       }
       @media (max-width: 475px){
-        font-size: 45px;
+        font-size: 60px;
       }
       
       > .subtitleHeroArea{
@@ -63,12 +63,11 @@ export const HeroAreaContainer = styled.section`
           line-height: 145px;
         }
         @media (max-width: 475px){
-          line-height: 60px;
-          font-size: 50px;
+          line-height: 80px;
+          font-size: 55px;
         }
       }
     }
-
 
     > p{
       text-align: center;
@@ -78,8 +77,8 @@ export const HeroAreaContainer = styled.section`
       color: #fff;
 
       @media (max-width: 475px){
-        font-size: 14px;
-        max-width: 80%;
+        font-size: 16px;
+        padding: 0px 10px;
       }
     }
 

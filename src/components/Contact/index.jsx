@@ -31,7 +31,7 @@ export function Contact(){
         </div>
 
 
-          <Button margin="15px 0px 0px" ftsize={`clamp(.5rem, .7em + 1vw, 2em)`} bgcolor="#dc2751">Quero fazer minha Landing Page</Button>
+          <Button margin="15px 0px 0px" ftsize={`clamp(.5rem, .7em + 1vw, 2em)`} bgcolor="#dc2751">Desenvolva Seu Futuro Digital</Button>
        
       </ContactContainer>
     </>
