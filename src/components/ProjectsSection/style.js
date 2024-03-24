@@ -68,7 +68,7 @@ import styled from "styled-components";
         transform: scale(.95);
   
         img{
-          filter: grayscale(0) opacity(100%) brightness(.6);
+          filter: grayscale(0) opacity(100%) brightness(.3);
         }
   
         h1{
@@ -103,10 +103,11 @@ import styled from "styled-components";
     
       .fontWeight{
         font-size: 22px;
-        font-style: italic;
+        line-height: 50px;
         font-family: "Madimi One", sans-serif;
-        color: rgb(220, 39, 81);
-        font-weight: 600;
+        color: white;
+        opacity: .8;
+        font-weight: 400;
       }
     }
   }

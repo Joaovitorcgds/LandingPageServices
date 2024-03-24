@@ -1,5 +1,5 @@
-import imgProject1 from "../assets/imgProject.jpg";
-import imgProject2 from "../assets/imgProject2.jpg";
+import imgProject1 from "../assets/imgProject.webp";
+import imgProject2 from "../assets/imgProject2.webp";
 import imgProject3 from "../assets/imgProject3.webp";
 
 
