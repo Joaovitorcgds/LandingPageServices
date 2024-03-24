@@ -34,7 +34,7 @@ export const ContainerDoubts = styled.div`
       line-height: 80px;
       color: #1b1b1b;
 
-      @media (max-width: 450px){
+      @media (max-width: 650px){
         font-size: 32px;
         line-height: 50px;
       }
@@ -62,7 +62,6 @@ export const ContainerDoubts = styled.div`
       height: 0;
       display: none;
       transition: all ease-in-out .5s;
-      /* visibility: hidden; */
     }
     
     div .expanded{

@@ -63,7 +63,7 @@ export const ContactContainer = styled.section`
         -webkit-text-stroke: 1px #fff;
         opacity: .8;
 
-        @media (max-width: 450px){
+        @media (max-width: 650px){
           font-size: 40px;
           line-height: 30px;
         }
@@ -72,7 +72,7 @@ export const ContactContainer = styled.section`
         }
       }
 
-      @media (max-width: 450px){
+      @media (max-width: 650px){
         font-size: 40px;
         line-height: 30px;
       }

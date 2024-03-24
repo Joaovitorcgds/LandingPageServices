@@ -35,7 +35,7 @@ import styled from "styled-components";
       line-height: 80px;
       color: #1b1b1b;
 
-      @media (max-width: 450px){
+      @media (max-width: 650px){
         font-size: 30px;
         line-height: 50px;
       }

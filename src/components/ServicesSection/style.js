@@ -33,7 +33,7 @@ export const ContainerServices = styled.section`
       line-height: 90px;
       color: #1b1b1b;
 
-      @media (max-width: 450px){
+      @media (max-width: 650px){
         font-size: 36px;
         line-height: 80px;
       }
