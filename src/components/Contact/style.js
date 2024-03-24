@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import imgBgContact from "../../assets/imgBgContact.jpeg"
+import imgBgContact from "../../assets/imgBgContact.webp"
 
 export const ContactContainer = styled.section`
   background-image: url(${imgBgContact});
