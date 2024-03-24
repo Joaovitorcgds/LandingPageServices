@@ -7,7 +7,7 @@ export const ContactContainer = styled.section`
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
-  background-position: top;
+  background-color: black;
   width: 100%;
   height: 100vh;
   display: flex;
