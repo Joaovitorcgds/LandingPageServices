@@ -1,5 +1,4 @@
 import { ContactContainer } from "./style";
-import { Button } from "../Layouts/Button";
 import { useLayoutEffect } from "react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/all";
@@ -31,7 +30,7 @@ export function Contact(){
         </div>
 
 
-          <Button margin="15px 0px 0px" ftsize={`clamp(.5rem, .7em + 1vw, 2em)`} bgcolor="#dc2751">Desenvolva Seu Futuro Digital</Button>
+        <a href="https://api.whatsapp.com/send?phone=5521975875130&text=Quero%20dar%20o%20primeiro%20passo%20para%20construir%20a%20identidade%20digital%20da%20minha%20empresa." className="btnHeroArea">Desenvolva Seu Futuro Digital</a>
        
       </ContactContainer>
     </>

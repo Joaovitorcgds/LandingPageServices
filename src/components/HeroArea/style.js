@@ -7,7 +7,7 @@ export const HeroAreaContainer = styled.section`
   background-size: cover;
   background-repeat: no-repeat;
   background-color: black;
-  width: 100vw;
+  width: 100%;
   height: 100vh;
   position: relative;
   top: 0;
@@ -33,18 +33,22 @@ export const HeroAreaContainer = styled.section`
       flex-direction: column;
       text-align: center;
       margin-top: 45px;
-      font-size: 65px;
-      line-height: 4rem;
+      font-size: 105px;
+      line-height: 135px;
       animation-delay: .4s;
       color: transparent;
       -webkit-text-stroke: 1px #fff;
       opacity: .8;
 
-      @media (min-width: 950px) {
-        font-size: 105px;
-        line-height: 135px
+      @media (max-width: 950px) {
+        font-size: 85px;
+        line-height: 105px;
       }
       @media (max-width: 475px){
+        font-size: 70px;
+      }
+      @media (max-width: 380px){
+        line-height: 70px;
         font-size: 60px;
       }
       
@@ -63,8 +67,12 @@ export const HeroAreaContainer = styled.section`
           line-height: 145px;
         }
         @media (max-width: 475px){
-          line-height: 80px;
-          font-size: 55px;
+          line-height: 70px;
+          font-size: 70px;
+        }
+        @media (max-width: 380px){
+          line-height: 75px;
+          font-size: 60px;
         }
       }
     }

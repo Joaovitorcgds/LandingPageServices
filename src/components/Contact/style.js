@@ -8,7 +8,7 @@ export const ContactContainer = styled.section`
   background-attachment: fixed;
   background-position: top;
   width: 100%;
-  height: 80vh;
+  height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -73,4 +73,29 @@ export const ContactContainer = styled.section`
       margin-top: 15px;
     }
   }
+  > .btnHeroArea{
+      text-decoration: none;
+      margin-top: 45px;
+      padding: 15px 30px;
+      color: white;
+      font-weight: 600;
+      font-size: clamp(.5rem, .7em + 1vw, 2em);
+      border: 2px solid #dc2751;
+      border-radius: 80px;
+      background-color:#dc2751;
+      transition: all .4s;
+
+      &:hover{
+        cursor: pointer;
+        background-color: #dc2751;
+      }
+
+      @media (max-width: 475px){
+        font-size: 14px;
+      }
+
+      @media (max-width: 340px){
+        font-size: 12px;
+      }
+    }
 `
