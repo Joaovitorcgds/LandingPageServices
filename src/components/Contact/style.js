@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import imgBgContact from "../../assets/imgBgContact.webp"
+import imgBgContactMobile from "../../assets/imgBgContactMobile.webp"
 
 export const ContactContainer = styled.section`
   background-image: url(${imgBgContact});
@@ -13,6 +14,10 @@ export const ContactContainer = styled.section`
   align-items: center;
   justify-content: center;
   flex-direction: column;
+
+  @media (max-width: 650px){
+    background-image: url(${imgBgContactMobile});
+  }
 
   > .textContainer{
     display: flex;
