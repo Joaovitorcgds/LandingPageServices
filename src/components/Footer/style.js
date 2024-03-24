@@ -25,6 +25,9 @@ export const FooterContainer = styled.section`
       max-width: 250px;
       
       h1{
+        font-family: "Poppins", sans-serif;
+        font-weight: 700;
+        font-style: normal;
         font-size: 45px;
         line-height: 40px;
         margin-bottom: 30px;
@@ -61,6 +64,9 @@ export const FooterContainer = styled.section`
       width: 250px;
   
       > h1{
+        font-family: "Poppins", sans-serif;
+        font-weight: 700;
+        font-style: normal;
         font-size: 28px;
         line-height: 40px;
         margin-bottom: 10px;
@@ -95,6 +101,9 @@ export const FooterContainer = styled.section`
       flex-direction: column;
       
       >h1{
+        font-family: "Poppins", sans-serif;
+        font-weight: 700;
+        font-style: normal;
         font-size: 28px;
       }
   
@@ -120,6 +129,9 @@ export const FooterContainer = styled.section`
       max-width: 250px;
   
       > h1{
+        font-family: "Poppins", sans-serif;
+        font-weight: 700;
+        font-style: normal;
         font-size: 28px;
         margin-bottom: 10px;
       }

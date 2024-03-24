@@ -33,6 +33,9 @@ export const HeroAreaContainer = styled.section`
       flex-direction: column;
       text-align: center;
       margin-top: 45px;
+      font-family: "Poppins", sans-serif;
+      font-weight: 700;
+      font-style: normal;
       font-size: 105px;
       line-height: 135px;
       animation-delay: .4s;

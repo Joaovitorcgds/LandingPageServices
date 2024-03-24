@@ -93,6 +93,9 @@ import styled from "styled-components";
       }
   
       > h1{
+        font-family: "Poppins", sans-serif;
+        font-weight: 700;
+        font-style: normal;
         text-align: center;
         line-height: 25px;
         position: absolute;

@@ -56,6 +56,9 @@ export const ContactContainer = styled.section`
       color: #fff;
 
       > span{
+        font-family: "Poppins", sans-serif;
+        font-weight: 700;
+        font-style: normal;
         font-size: 65px;
         line-height: 4rem;
         animation-delay: .4s;
