@@ -7,7 +7,6 @@ export const ContactContainer = styled.section`
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
-  background-color: black;
   width: 100%;
   height: 100vh;
   display: flex;
@@ -17,6 +16,8 @@ export const ContactContainer = styled.section`
 
   @media (max-width: 650px){
     background-image: url(${imgBgContactMobile});
+    background-attachment: initial;
+    background-position: right;
   }
 
   > .textContainer{
@@ -42,6 +43,9 @@ export const ContactContainer = styled.section`
         font-size: 20px;
         line-height: 30px;
       }
+      @media (max-width: 380px){
+          font-size: 18px;
+        }
     }
 
     > h1{
@@ -60,14 +64,20 @@ export const ContactContainer = styled.section`
         opacity: .8;
 
         @media (max-width: 450px){
-          font-size: 32px;
+          font-size: 40px;
           line-height: 30px;
+        }
+        @media (max-width: 380px){
+          font-size: 32px;
         }
       }
 
       @media (max-width: 450px){
-        font-size: 32px;
+        font-size: 40px;
         line-height: 30px;
+      }
+      @media (max-width: 380px){
+        font-size: 32px;
       }
     }
 
