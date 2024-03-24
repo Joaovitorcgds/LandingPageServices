@@ -8,7 +8,6 @@ import { ScrollTrigger } from "gsap/all";
 export function Projects() {
 
   useLayoutEffect(() => {
-    
     gsap.registerPlugin(ScrollTrigger);
     gsap.to(".textContainer", {
       opacity: 1,
@@ -34,7 +33,7 @@ export function Projects() {
         {ProjectsUtil.map((item) => {
           return(
             <div className="cardsProjects" key={item.title}>
-              <img className="imgProjects" src={item.img} alt="sadsda"/>
+              <img className="imgProjects" src={item.img} alt={`serviços de ${item.title}`}/>
               <h1>{item.title}
                 <br></br>
                 <span className="fontWeight">{item.subtitle}</span>

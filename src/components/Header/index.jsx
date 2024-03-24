@@ -51,7 +51,7 @@ export function Header(){
   return(
     <>
       <HeaderContainer className={navbar ? "sticky" : ""}>
-        <a href="/">João Developer</a>
+        <a href="/" aria-label="Redirecionar para página inicial">João Developer</a>
 
         {isOpen ? 
           <X size={32} onClick={toggleMenu} weight="bold" color={navbar ? "black" : "white"}/>
@@ -62,8 +62,8 @@ export function Header(){
         <nav className="navigation">
           {navItens.map((item) => {
             return(
-              <a href={item.navigate} key={item.name}>
-                {item.name}
+              <a href={item.navigate} key={item.name} aria-label={`Redirecionar para seção de ${item.name}`}>
+                {item.name} 
               </a>
             )
           })}
@@ -72,7 +72,7 @@ export function Header(){
         <nav className={` menuMobile ${isOpen ? "actived" : ""}`}>
           {navItens.map((item) => {
             return(
-              <a href={item.navigate} onClick={() => setIsOpen(false)} key={item.name}>
+              <a href={item.navigate} onClick={() => setIsOpen(false)} key={item.name} aria-label={`Redirecionar para seção de ${item.name}`}>
                 {item.name}
               </a>
             )
@@ -80,7 +80,7 @@ export function Header(){
         </nav>
 
         <a href="https://api.whatsapp.com/send?phone=5521975875130&text=Quero%20dar%20o%20primeiro%20passo%20para%20construir%20a%20identidade%20digital%20da%20minha%20empresa."
-        target="_blank" className="btnHeader">Solicitar Orçamento</a>
+        target="_blank" className="btnHeader" aria-label="Butão para Solicitar Orçamento">Solicitar Orçamento</a>
       </HeaderContainer>
     </>
   )

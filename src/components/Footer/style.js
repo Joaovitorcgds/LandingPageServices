@@ -9,7 +9,6 @@ export const FooterContainer = styled.section`
   flex-wrap: wrap;
   gap: 30px;
   justify-content: space-between;
-  /* overflow-y: scroll; */
 
   @media(max-width: 545px){
     padding-left: 20px;
@@ -21,8 +20,6 @@ export const FooterContainer = styled.section`
     flex-wrap: wrap;
     gap: 30px;
     padding: 100px 20px;
-
-    
 
     > .aboutMe{
       max-width: 250px;
@@ -106,7 +103,8 @@ export const FooterContainer = styled.section`
         color: #999;
       }
   
-      span:nth-child(3){
+      a:nth-child(3){
+        text-decoration: none;
         display: inline-block;
         color: #999;
         border-bottom: 3px solid #dc2751 ;
@@ -126,7 +124,7 @@ export const FooterContainer = styled.section`
         margin-bottom: 10px;
       }
   
-      > span{
+      > p{
        margin: 20px 0px;
        line-height: 30px;
        color: #999;
@@ -143,6 +141,4 @@ export const FooterContainer = styled.section`
     opacity: .8;
     height: 100px;
   }
-
-
 `
