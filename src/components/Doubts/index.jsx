@@ -43,16 +43,20 @@ export function Doubts(){
       answer: "É uma página da web projetada especificamente para receber o tráfego direcionado de uma campanha de marketing, anúncio ou link. O objetivo principal de uma landing page é converter os visitantes em leads ou clientes"
     },
     {
-      question: "Quanto tempo leva para criar um site ou landing page?",
-      answer: "O período de criação varia entre 1 ou 2 semanas dependendo das funcionalidades e número de páginas que serão pedidas."
+      question: "Quanto tempo leva para as estratégias de tráfego gerar resultados?",
+      answer: "O tempo para ver resultados pode variar dependendo de diversos fatores, como a competitividade do seu nicho, a qualidade do seu conteúdo e a eficácia das estratégias implementadas. Em geral, esperamos começar a ver melhorias significativas dentro de alguns meses, mas os resultados mais substanciais podem levar de seis meses a um ano para se materializarem completamente."
     },
     {
-      question: "Como funciona o processo de design e desenvolvimento?",
-      answer: "O cliente passa algumas especificações como estilo de design, cores, fontes e as funcionalidades que ele deseja e depois passa por um conjuto de análises para chegar a uma precificação e logo após cpmeçar o processo de desenvolvimento."
+      question: "Quais métricas serão usadas para avaliar o sucesso?",
+      answer: "Estaremos acompanhando várias métricas-chave, incluindo tráfego do site, classificações de palavras-chave, taxa de cliques (CTR), taxa de conversão, tempo no site e outros indicadores relevantes. Essas métricas nos ajudarão a avaliar o desempenho das estratégias implementadas e fazer ajustes conforme necessário para alcançar os melhores resultados."
     },
     {
-      question: "Posso fazer atualizações no site ou landing page por conta própria?",
-      answer: "Sim, disponibilizamos o login de acesso no serviço de hospedagem mais o arquivo compactado do site"
+      question: "Qual é o custo dos serviços?",
+      answer: "Os custos dos nossos serviços podem variar dependendo do escopo do trabalho, da complexidade das estratégias necessárias e do tempo e recursos envolvidos. Estamos dispostos a discutir suas necessidades específicas e oferecer um orçamento personalizado que atenda às suas expectativas e objetivos de negócio."
+    },
+    {
+      question: "Que tipo de resultados podemos esperar a curto e longo prazo?",
+      answer: "A curto prazo, podemos esperar ver melhorias incrementais no tráfego do site e nas classificações de palavras-chave à medida que implementamos as estratégias iniciais. A longo prazo, nosso objetivo é alcançar um crescimento sustentável e contínuo do tráfego orgânico, resultando em maior visibilidade online, autoridade de domínio e, por fim, um impacto positivo nas suas metas de negócio."
     }
   ]
   

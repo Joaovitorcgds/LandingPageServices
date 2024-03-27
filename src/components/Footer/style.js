@@ -10,10 +10,6 @@ export const FooterContainer = styled.section`
   gap: 30px;
   justify-content: space-between;
 
-  @media(max-width: 545px){
-    padding-left: 20px;
-  }
-
   > div:nth-child(1){
     display: flex;
     justify-content: space-between;
