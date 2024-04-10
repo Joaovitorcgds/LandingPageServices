@@ -6,7 +6,7 @@ import imgProject3 from "../assets/imgProject3.webp";
 export const ProjectsUtil = [
   {
     img: imgProject1,
-    title: "Landing Page",
+    title: "Site Institucional",
     subtitle: "Agência de finanças"
   },
   {
@@ -16,7 +16,7 @@ export const ProjectsUtil = [
   },
   {
     img: imgProject3,
-    title: "eCommerce",
+    title: "Landing Page",
     subtitle: "Loja de Acessórios"
   }
 
