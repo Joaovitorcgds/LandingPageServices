@@ -39,8 +39,8 @@ export function Doubts(){
 
   const doubtsList = [
     {
-      question: "Qual é a diferença entre uma landing page e um site institucional e como essa diferença impacta nas estratégias de marketing digital?",
-      answer: "Uma landing page é uma página da web focada em uma oferta específica, como um produto, serviço ou promoção. Ela tem um objetivo claro, como capturar leads ou incentivar ações específicas dos visitantes, como preencher um formulário ou fazer uma compra. Por outro lado, um site institucional é mais abrangente, apresentando informações sobre a empresa, seus produtos/serviços, histórico, equipe, entre outros detalhes. A diferença principal está na função e no foco: a landing page é projetada para uma conversão direta e imediata, enquanto o site institucional tem uma abordagem mais ampla para apresentar a empresa de forma geral. Para estratégias de marketing digital, a landing page é ideal para campanhas de publicidade online, e-mail marketing ou eventos específicos, pois direciona os visitantes para uma ação específica, aumentando as taxas de conversão. Já o site institucional é crucial para estabelecer a credibilidade da marca, fornecer informações detalhadas aos clientes em potencial e consolidar a presença online da empresa, contribuindo para a construção de relacionamentos a longo prazo."
+      question: "Qual é a diferença entre uma landing page e um site institucional?",
+      answer: "Uma landing page é uma página da web focada em uma oferta específica, como um produto, serviço ou promoção. Ela tem um objetivo claro, como capturar leads ou incentivar ações específicas dos visitantes, como preencher um formulário ou fazer uma compra. Por outro lado, um site institucional é mais abrangente, apresentando informações sobre a empresa, seus produtos/serviços, histórico, equipe, entre outros detalhes para apresentar a empresa de forma geral."
     },
     {
       question: "Como essa diferença impacta nas estratégias de marketing digital?",
