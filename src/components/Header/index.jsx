@@ -80,7 +80,7 @@ export function Header(){
         </nav>
 
         <a href="https://api.whatsapp.com/send?phone=5521975875130&text=Quero%20dar%20o%20primeiro%20passo%20para%20construir%20a%20identidade%20digital%20da%20minha%20empresa."
-        target="_blank" className="btnHeader" aria-label="Butão para Solicitar Orçamento">Solicitar Orçamento</a>
+        target="_blank" className="btnHeader" aria-label="Botão para Solicitar Orçamento">Solicitar Orçamento</a>
       </HeaderContainer>
     </>
   )

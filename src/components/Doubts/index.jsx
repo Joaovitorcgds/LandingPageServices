@@ -43,11 +43,7 @@ export function Doubts(){
       answer: "Uma landing page é uma página da web focada em uma oferta específica, como um produto, serviço ou promoção. Ela tem um objetivo claro, como capturar leads ou incentivar ações específicas dos visitantes, como preencher um formulário ou fazer uma compra. Por outro lado, um site institucional é mais abrangente, apresentando informações sobre a empresa, seus produtos/serviços, histórico, equipe, entre outros detalhes para apresentar a empresa de forma geral."
     },
     {
-      question: "Como essa diferença impacta nas estratégias de marketing digital?",
-      answer: "Para estratégias de marketing digital, a landing page é ideal para campanhas de publicidade online, e-mail marketing ou eventos específicos, pois direciona os visitantes para uma ação específica, aumentando as taxas de conversão. Já o site institucional é crucial para estabelecer a credibilidade da marca, fornecer informações detalhadas aos clientes em potencial e consolidar a presença online da empresa, contribuindo para a construção de relacionamentos a longo prazo."
-    },
-    {
-      question: "Como um site pode realmente ajudar a aumentar as vendas da minha empresa?",
+      question: "A criação de um site pode realmente ajudar a minha empresa?",
       answer: "Um site não é apenas uma presença online, é sua vitrine digital para o mundo. Com um design atrativo e funcionalidades estratégicas, podemos atrair mais clientes, gerar leads qualificados e facilitar o processo de compra. Isso resulta em um aumento significativo nas vendas e nas receitas da sua empresa, transformando visitantes em clientes satisfeitos."
     },
     {
@@ -67,7 +63,7 @@ export function Doubts(){
     },
     {
       question: "Qual será o retorno do investimento (ROI) ao desenvolver um site para minha empresa?",
-      answer: "Nossos projetos são focados em resultados mensuráveis. Com um site bem projetado, otimizado e alinhado com sua estratégia de negócios, você pode esperar um retorno substancial sobre o investimento. Aumento nas vendas, redução de custos operacionais e maior visibilidade da marca são apenas alguns dos benefícios que contribuem para um ROI positivo e sustentável.."
+      answer: "Nossos projetos são focados em resultados mensuráveis. Com um site bem projetado, otimizado e alinhado com sua estratégia de negócios, você pode esperar um retorno substancial sobre o investimento. Aumento nas vendas, redução de custos operacionais e maior visibilidade da marca são apenas alguns dos benefícios que contribuem para um ROI positivo e sustentável."
     }
   ]
   
@@ -85,7 +81,13 @@ export function Doubts(){
             <ButtonToggleFAQ onclick={() => toggleFAQ(i)} key={i}
             className={`btnFAQ ${i}`}>
               <span className="questionFAQ">{doubt.question}</span>
-              <span className={` answerFAQ `}>{doubt.answer}</span>
+              <span className="answerFAQ">
+                {doubt.answer + " Para mais informação "}
+                <a href="https://api.whatsapp.com/send?phone=5521975875130&text=Quero%20dar%20o%20primeiro%20passo%20para%20construir%20a%20identidade%20digital%20da%20minha%20empresa."
+                target="_blank" aria-label="Botão saiba mais">
+                  clique aqui.
+                </a>
+               </span>
             </ButtonToggleFAQ>
           )
         })}

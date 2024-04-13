@@ -62,6 +62,10 @@ export const ContainerDoubts = styled.div`
       height: 0;
       display: none;
       transition: all ease-in-out .5s;
+
+      > a{
+        color: #1b1b1b;
+      }
     }
     
     div .expanded{
