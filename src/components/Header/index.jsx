@@ -51,7 +51,7 @@ export function Header(){
   return(
     <>
       <HeaderContainer className={navbar ? "sticky" : ""}>
-        <a href="/" aria-label="Redirecionar para página inicial">João Developer</a>
+        <a href="/" aria-label="Redirecionar para página inicial">Lates Solucions</a>
 
         {isOpen ? 
           <X size={32} onClick={toggleMenu} weight="bold" color={navbar ? "black" : "white"}/>
