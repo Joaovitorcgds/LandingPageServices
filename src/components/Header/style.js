@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const HeaderContainer = styled.header`
-  width: 100%;
+  width: 100vw;
   height: 70px;
   background-color: transparent;
   color: white;

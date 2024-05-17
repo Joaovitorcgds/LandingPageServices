@@ -68,7 +68,7 @@ import styled from "styled-components";
         transform: scale(.95);
   
         img{
-          filter: grayscale(0) opacity(100%) brightness(.3);
+          filter: grayscale(0) opacity(100%) brightness(.4);
         }
   
         h1{

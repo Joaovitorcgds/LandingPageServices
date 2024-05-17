@@ -32,10 +32,10 @@ import { Dot, InstagramLogo, WhatsappLogo, LinkedinLogo } from "@phosphor-icons/
           <h1>Lates Solutions</h1>
           <span>Conheça mais sobre a Lates e suas soluções através de suas redes socias.</span>
           <div className="containerCircleMedia">
-            <a href="https://api.whatsapp.com/send?phone=5521975875130&text=Quero%20dar%20o%20primeiro%20passo%20para%20construir%20a%20identidade%20digital%20da%20minha%20empresa." target="_blank" className="circleMedia" aria-label="WhatsApp de João Developer">
+            <a href="https://api.whatsapp.com/send?phone=5521993788710&text=Quero%20dar%20o%20primeiro%20passo%20para%20construir%20a%20identidade%20digital%20da%20minha%20empresa." target="_blank" className="circleMedia" aria-label="WhatsApp de João Developer">
               <WhatsappLogo size={25} />
             </a>
-            <a href="https://www.instagram.com/joaovitorcgds/" target="_blank"className="circleMedia" aria-label="Instagram de João Developer"> 
+            <a href="https://www.instagram.com/lates_solutions/" target="_blank"className="circleMedia" aria-label="Instagram de João Developer"> 
               <InstagramLogo size={25} />
             </a>
             <a href="https://www.linkedin.com/in/joaovitorcgds/" target="_blank" className="circleMedia" aria-label="LinkedIn de João Developer">

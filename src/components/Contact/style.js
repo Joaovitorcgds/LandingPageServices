@@ -3,21 +3,35 @@ import imgBgContact from "../../assets/imgBgContact.webp"
 import imgBgContactMobile from "../../assets/imgBgContactMobile.webp"
 
 export const ContactContainer = styled.section`
-  background-image: url(${imgBgContact});
+  /* background-image: url(${imgBgContact});
   background-size: cover;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  width: 100%;
+  background-repeat: no-repeat; */
+  /* background-attachment: fixed; */
+  /* backdrop-filter: brightness(.3); */
+  width: 100vw;
   height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
+  position: relative;
 
-  @media (max-width: 650px){
-    background-image: url(${imgBgContactMobile});
-    background-attachment: initial;
-    background-position: right;
+  > .background-image{
+    background-image: url(${imgBgContact});
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    filter: grayscale(0) opacity(100%) brightness(.5);
+    
+    @media (max-width: 650px){
+      background-image: url(${imgBgContactMobile});
+      background-attachment: initial;
+      filter: grayscale(0) opacity(100%) brightness(.3);
+    }
   }
 
   > .textContainer{
@@ -27,16 +41,16 @@ export const ContactContainer = styled.section`
     margin-bottom: 30px;
     width: 0;
     white-space: nowrap;
-    overflow-x: hidden;
     transition: all steps(30) 1s normal both;
     opacity: 0;
+    z-index: 1;
 
     > span{
       font-weight: 200;
       font-size: 22px;
       font-style: italic;
       font-family: "Madimi One", sans-serif;
-      color: #dc2751;
+      color: #ffffff;
       margin-bottom: 15px;
 
       @media (max-width: 450px){
@@ -91,7 +105,8 @@ export const ContactContainer = styled.section`
       margin-top: 15px;
     }
   }
-  > .btnHeroArea{
+
+  > div > .btnHeroArea{
       text-decoration: none;
       margin-top: 45px;
       padding: 15px 30px;
