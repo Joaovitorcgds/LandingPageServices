@@ -59,8 +59,8 @@ import { Dot, InstagramLogo, WhatsappLogo, LinkedinLogo } from "@phosphor-icons/
         </div>
         <div className="infoContact">
           <h1>Informações Contato</h1>
-          <span className="infoLocation">Rio de Janeiro, Brazil</span>
-          <a href="mailto:joaovitorcgds@gmail.com?subject=Quero desenvolver meu futuro digital&cc=joaovitorcgds@gmail.com&body=Quero dar o primeiro passo para construir a identidade digital da minha empresa." aria-label="Enviar email">joaovitorcgds@gmail.com</a>
+          <span className="infoLocation">Rio de Janeiro, Brasil</span>
+          <a href="mailto:contato@latessolutions.com?subject=Quero desenvolver meu futuro digital&cc=contato@latessolutions.com&body=Quero dar o primeiro passo para construir a identidade digital da minha empresa." aria-label="Enviar email">contato@latessolutions.com</a>
         </div>
         <div className="agradecimentos">
           <h1>Nota de Agradecimento</h1>
