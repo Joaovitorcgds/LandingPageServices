@@ -68,7 +68,7 @@ import { Dot, InstagramLogo, WhatsappLogo, LinkedinLogo } from "@phosphor-icons/
         </div>
       </div>
       <div className="bottom">
-        <span>Desenvolvido por Lates Solutions</span>
+        <span>&copy; 2024 Lates Solutions. Todos os direitos reservados.</span>
       </div>
     </FooterContainer>
   )

@@ -23,7 +23,7 @@ export const HeaderContainer = styled.header`
     background-color: white;
     color: black;
 
-    a{
+    a > span{
       color: black;
     }
 
@@ -45,19 +45,40 @@ export const HeaderContainer = styled.header`
     }
   }
   
-  > a{
+  > a{ 
     text-decoration: none;
-    color: white;
-    font-weight: 700;
-    font-size: 1.5rem;
-    transition: color .2s;
-    
-    &:hover{
-      cursor: pointer;
-      color: #dc2751;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+  
+    > img{
+      @media (max-width: 450px){
+        width: 30px;
+      }
     }
 
-  }
+    > span{
+      color: white;
+      font-weight: 700;
+      font-size: 1.5rem;
+      transition: color .2s;
+      
+      &:hover{
+        cursor: pointer;
+        color: #dc2751;
+      }
+
+      @media (max-width: 450px){
+        font-size: 18px;
+      }
+    }
+
+    @media (max-width: 450px){
+        gap: 5px;
+      }
+
+  }  
 
   .btnMobile{
     @media (min-width: 950px){

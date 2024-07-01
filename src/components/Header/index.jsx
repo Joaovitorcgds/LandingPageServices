@@ -1,6 +1,7 @@
 import { useState } from "react"
 import { List, X } from "@phosphor-icons/react";
 import { HeaderContainer } from "./style";
+import logo from "../../assets/logo.png"
 
 export function Header(){
   const navItens = [
@@ -51,7 +52,10 @@ export function Header(){
   return(
     <>
       <HeaderContainer className={navbar ? "sticky" : ""}>
-        <a href="/" aria-label="Redirecionar para página inicial">Lates Solutions</a>
+        <a href="/" aria-label="Redirecionar para página inicial" >
+          <img src={logo} alt="Logo da Lates Solutions" width={50}/>
+          <span>Lates Solutions</span>
+        </a>
 
         {isOpen ? 
           <X size={32} onClick={toggleMenu} weight="bold" color={navbar ? "black" : "white"}/>
